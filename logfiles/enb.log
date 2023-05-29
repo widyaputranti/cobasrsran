@@ -1,0 +1,49 @@
+2023-05-29T13:22:30.688818 [ENB    ] [I] Using binary srsenb with arguments: enb.conf 
+2023-05-29T13:22:30.763497 [ENB    ] [I] Built in RelWithDebInfo mode using 22.10.0.
+2023-05-29T13:22:30.823643 [RRC    ] [I] Tx Broadcast PDU - systemInformationBlockType1, cc=0, idx=0 (15 B)
+    0000: 40 64 04 e1 00 07 00 19 b0 18 14 60 10 82 80
+2023-05-29T13:22:30.823656 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cd 41 c2 14 62 d8 4e a5
+2023-05-29T13:22:30.823660 [RRC    ] [I] Allocating 1 PRBs for PUCCH
+2023-05-29T13:22:30.823947 [MAC    ] [I] [    0] Using time-domain PF scheduling policy for cc=0
+2023-05-29T13:22:30.823959 [RRC    ] [I] T310 200, T311 10000, N310 1
+2023-05-29T13:22:30.823960 [RRC    ] [I] Inactivity timeout: 30000 ms
+2023-05-29T13:22:30.823960 [RRC    ] [I] Max consecutive MAC KOs: 100
+2023-05-29T13:22:30.823970 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2023-05-29T13:22:30.824035 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:2152
+2023-05-29T13:22:30.824052 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
+2023-05-29T13:22:30.824053 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
+2023-05-29T13:22:30.824090 [COMN   ] [D] [    0] Opened SCTP socket=7
+2023-05-29T13:22:30.824103 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2023-05-29T13:22:30.824106 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2023-05-29T13:22:30.824131 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2023-05-29T13:22:30.824132 [S1AP   ] [I] SCTP socket opened. fd=7
+2023-05-29T13:22:30.824324 [S1AP   ] [I] SCTP socket connected with MME. fd=7
+2023-05-29T13:22:30.826762 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2023-05-29T13:22:30.826763 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2023-05-29T13:22:30.829956 [COMN   ] [D] [    0] RxSockets: socket fd=7 has been registered.
+2023-05-29T13:22:30.829957 [S1AP   ] [I] SCTP socket established with MME
+2023-05-29T13:22:30.830025 [S1AP   ] [I] Proc "MME Connection" - Connected to MME. Sending S1 setup request.
+2023-05-29T13:22:30.833808 [S1AP   ] [I] Tx S1AP SDU, s1SetupRequest
+    0000: 00 11 00 2d 00 00 04 00 3b 00 08 00 09 f1 07 00
+    0010: 00 19 b0 00 3c 40 0a 03 80 73 72 73 65 6e 62 30
+2023-05-29T13:22:30.833946 [S1AP   ] [I] Proc "MME Connection" - S1 setup request sent. Waiting for response.
+2023-05-29T13:22:30.836317 [S1AP   ] [I] Rx S1AP SDU - S1SetupResponse
+    0000: 20 11 00 29 00 00 03 00 3d 40 0e 05 80 6f 70 65
+    0010: 6e 35 67 73 2d 6d 6d 65 30 00 69 00 0b 00 00 09
+2023-05-29T13:22:30.836324 [S1AP   ] [I] Proc "MME Connection" - S1Setup procedure completed successfully
+2023-05-29T13:22:45.744566 [PHY0   ] [I] [    0] Component Carrier Worker 0 configured cell 100 PRB
+2023-05-29T13:22:45.744634 [PHY0   ] [I] [    0] Worker 0 configured cell 100 PRB
+2023-05-29T13:22:45.940939 [PHY1   ] [I] [    0] Component Carrier Worker 0 configured cell 100 PRB
+2023-05-29T13:22:45.941007 [PHY1   ] [I] [    0] Worker 0 configured cell 100 PRB
+2023-05-29T13:22:46.137319 [PHY2   ] [I] [    0] Component Carrier Worker 0 configured cell 100 PRB
+2023-05-29T13:22:46.137385 [PHY2   ] [I] [    0] Worker 0 configured cell 100 PRB
+2023-05-29T13:22:46.145235 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2680.0 MHz
+2023-05-29T13:22:46.170085 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=2560.0 MHz
+2023-05-29T13:22:46.341914 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=100, sf_len=23040
+2023-05-29T13:23:26.234241 [COMN   ] [D] [    0] RxSockets: Closing rx socket handler thread
+2023-05-29T13:23:26.235256 [COMN   ] [D] [    0] RxSockets: closed.
+2023-05-29T13:23:26.235323 [COMN   ] [D] [    0] Socket=7 was closed.
+2023-05-29T13:23:26.238425 [COMN   ] [D] [    0] Socket=-1 could not be closed.
+2023-05-29T13:23:26.239069 [COMN   ] [D] [    0] Socket=-1 could not be closed.
